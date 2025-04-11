@@ -1,0 +1,177 @@
+/* General Styles */
+.history {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Chart Box Styles */
+.charts-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.chart-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  flex: 1;
+  min-width: 45%;
+}
+
+.chart-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  text-align: center;
+}
+
+/* History Data Section */
+.history-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.exercise-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.history-div {
+  height: 200px; /* Increased height */
+  background-color: #f9f9f9;
+  padding: 0.5rem; /* Reduced padding for compact layout */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.history-div:hover {
+  transform: translateY(-5px); /* Slightly lift the element */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.cardio-card {
+  background-color: #b3f12c; /* Light green for cardio */
+}
+
+.resistance-card {
+  background-color: lightskyblue; /* Light sky blue for resistance */
+}
+
+.date {
+  font-size: 0.85rem; /* Smaller font size */
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.exercise-card {
+  text-decoration: none;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Align items in the center vertically */
+  gap: 0.5rem; /* Small gap between image and text */
+  flex-grow: 1;
+  flex-wrap: wrap;
+  text-align: center; /* Ensure text is centered */
+}
+
+.icon img {
+  width: 50px; /* Larger icon size */
+  height: 50px; /* Maintain aspect ratio */
+  margin-bottom: 0.5rem; /* Space between image and text */
+}
+
+.history-name {
+  font-size: 1.1rem; /* Slightly larger font for the name */
+  font-weight: bold;
+  color: #333;
+}
+
+.history-details {
+  font-size: 0.95rem; /* Increase the size of the details slightly */
+  color: #555;
+}
+
+.show-btn {
+  background-color: #36A2EB;
+  color: white;
+  padding: 6px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 0.75rem; /* Smaller font size */
+  transition: background-color 0.3s;
+  margin-top: 3px;
+}
+
+.show-btn:hover {
+  background-color: #2980b9;
+}
+
+.no-data {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.home-btn {
+  background-color: #FF6384;
+  color: white;
+  padding: 6px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 18px;
+  font-size: 0.75rem; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+  }
+
+  .chart-box {
+    min-width: 100%;
+  }
+
+  .history-div {
+    width: 100%;
+    max-width: none;
+  }
+}
